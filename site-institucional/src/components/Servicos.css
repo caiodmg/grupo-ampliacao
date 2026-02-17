@@ -1,0 +1,115 @@
+.servicos {
+  padding: 6rem 0;
+  background: #f8f9fa;
+}
+
+.servicos .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.servicos h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.servicos .subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 3rem;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.servico-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.servico-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #4ECDC4 0%, #6BCF7F 100%);
+  padding: 2rem;
+  color: white;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card-body {
+  padding: 2rem;
+  flex-grow: 1;
+}
+
+.card-body p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.card-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-body li {
+  color: #666;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.card-body li:last-child {
+  border-bottom: none;
+}
+
+.btn-saiba-mais {
+  width: calc(100% - 4rem);
+  margin: 0 2rem 2rem 2rem;
+  padding: 0.8rem;
+  background: #FF8C42;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-saiba-mais:hover {
+  background: #FF7A2E;
+}
+
+@media (max-width: 768px) {
+  .servicos {
+    padding: 4rem 0;
+  }
+
+  .servicos h2 {
+    font-size: 2rem;
+  }
+
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+}

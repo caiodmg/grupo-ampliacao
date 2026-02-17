@@ -1,0 +1,74 @@
+.estrutura {
+  padding: 6rem 0;
+  background: white;
+}
+
+.estrutura .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.estrutura h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.estrutura .subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 3rem;
+}
+
+.estrutura .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.estrutura .card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.estrutura .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.estrutura .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.estrutura .card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.estrutura .card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .estrutura {
+    padding: 4rem 0;
+  }
+
+  .estrutura h2 {
+    font-size: 2rem;
+  }
+
+  .estrutura .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
